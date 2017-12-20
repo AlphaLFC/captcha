@@ -13,8 +13,9 @@ Created by PyCharm.
 def charlist(in_list):
     """
     Convert a list of strings to a list of separate chars.
-    :param in_list: ['', 'abc', 'd']
-    :return: ['', 'a', 'b', 'c', 'd']
+    # Example
+        param in_list: ['', 'abc', 'd']
+        return: ['', 'a', 'b', 'c', 'd']
     """
     out_list = []
     for i in in_list:
@@ -30,9 +31,9 @@ def flatten(in_list):
     '''Flatten a list[tuple] of list[tuple] objects to
     a list of non-list or non-tuple elements.
 
-    Example:
-        in_list = [1, [2, [3, 4]]]\n
-        out_list = flattern(in_list)\n
+    # Example
+        in_list = [1, [2, [3, 4]]]
+        out_list = flattern(in_list)
         out_list -> [1, 2, 3, 4]
     '''
     out_list = []
@@ -48,9 +49,9 @@ def shrinkstrlist(in_list):
     '''Shrink a list of str sequence to
     a list of strings seperated by empty str in the previous sequence.
 
-    Example:
-        in_list = ['', 'a', 'b', 'c', '', 'd']\n
-        out_list = shrinkstrlist(in_list)\n
+    # Example
+        in_list = ['', 'a', 'b', 'c', '', 'd']
+        out_list = shrinkstrlist(in_list)
         out_list -> ['abc', 'd']
     '''
     tmp_list = []
